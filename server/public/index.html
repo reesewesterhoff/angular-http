@@ -11,5 +11,6 @@
 <body ng-app="ShellApp" ng-controller="ShellController as vm">
     <h1>Angular http</h1>
     {{vm.number}}
+    <li ng-repeat="shell in vm.shells">{{shell.type}} and has a color of {{shell.color}}</li>
 </body>
 </html>

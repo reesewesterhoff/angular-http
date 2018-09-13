@@ -9,6 +9,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // globals
 const PORT = 5000;
+let shells = [
+    {type: 'Conch', color: 'Pink'},
+    {type: 'Blue', color: 'Blue'}
+];
+
+app.get('/shells', (req, res) => {
+    res.send(shells);
+});
 
 // spin up server
 app.listen(PORT, () => {
